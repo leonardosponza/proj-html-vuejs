@@ -1,7 +1,12 @@
 <template>
-  <header class=container>
-      <img src="@/assets/slider52x.jpg" alt="">
-  </header>
+    <section class="sezione1">
+          <header>
+              <img class="logo" src="@/assets/logo-restaurant.png" alt="">
+              <nav>
+                  
+              </nav>
+          </header>
+    </section>
 </template>
 
 <script>
@@ -10,6 +15,10 @@ export default {
 }
 </script>
 
-<style>
-
+<style lang="scss">
+.logo{
+    margin-top: 40px;
+    margin-left: 100px;
+    
+}
 </style>
