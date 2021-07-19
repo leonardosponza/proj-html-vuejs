@@ -1,11 +1,13 @@
 <template>
-    <section class="sezione1">
-          <header>
-              <div class="sinistra">
+    <section class="container-fluid sezione1">
+          <header class="row absolute">
+              <!-- immagine -->
+              <div class="sinistra col-6">
                   <img class="logo" src="@/assets/logo-restaurant.png" alt="">
               </div>
-            <div class="destra">
-                  <nav class="navbar navbar-expand-lg navbar-light float-end">
+              <!-- navbar -->
+            <div class="destra col-6">
+                  <nav class="navbar navbar-expand-lg navbar-light text-secondary  float-end">
                 <div class="container-fluid">
                     <a class="navbar-brand" href="#">Home</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -41,21 +43,25 @@
                       </div>
                    </div>
                   </nav>
+                  <!-- fine navbar -->
             </div>   
             </header>
-
-          <div class="sinistra bg-dark text-white">
-              <p>the best table in town</p>
+<div class="row">
+    <div class="sinistra col-6 bg-dark text-white">
+                <p style="margin-top: 80px;">the best table in town</p>
               <h1>FINE DINING</h1>
               <h1>EXPERIENCE</h1>
-              <p>Pellentesque vitae viverra risus, sagittis. Venenatis ridiculus scelerisque nisi in urna nulla. Sit tempor a et nisl, ac felis.</p>
-              <button type="button" class="btn btn-outline-secondary text-white">buy avada today</button>
+              <br>
+              <p>Pellentesque vitae viverra risus, sagittis.<br/> Venenatis ridiculus scelerisque nisi in urna <br/> nulla. Sit tempor a et nisl, ac felis.</p>
+              <button type="button" class="btn btn-outline-light">buy avada today</button>
 
           </div>
 
-          <div class="destra">
+          <div class="destra col-6" style="padding: 0px;">
               <img class='back' src="@/assets/slider52x.jpg" alt="">
           </div>
+</div>
+          
 
     </section>
 </template>
@@ -67,17 +73,28 @@ export default {
 </script>
 
 <style lang="scss">
-header{
-    margin-top: 40px;
-    margin-left: 100px;
-    
-}
 .sezione1{
     position: relative;
+}
+.absolute{
+    position: absolute;
+    width: 100%;
+    left: 0px;
+    
 }
 .back{
     width:100%; 
     min-width:600px; 
     margin:auto;
 }
+.destra{
+    padding: 0px;
+}
+.sinistra{
+    text-align: center;
+    
+}
+
+   
+
 </style>
