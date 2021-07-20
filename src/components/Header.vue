@@ -9,7 +9,7 @@
             <div class="destra col-6">
                   <nav class="navbar navbar-expand-lg navbar-light text-secondary  float-end">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="#">Home</a>
+                    <a class="navbar-brand text-white" href="#">Home</a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                     </button>
@@ -47,12 +47,13 @@
             </div>   
             </header>
 <div class="row">
-    <div class="sinistra col-6 bg-dark text-white">
-                <p style="margin-top: 80px;">the best table in town</p>
-              <h1>FINE DINING</h1>
-              <h1>EXPERIENCE</h1>
+    <div class="sinistra col-6 text-white">
+              <p style="margin-top: 300px; margin-right:200px;">the best table in town</p>
+              <h1 class="fusion">FINE DINING</h1>
+              <h1 class="fusion">EXPERIENCE</h1>
               <br>
               <p>Pellentesque vitae viverra risus, sagittis.<br/> Venenatis ridiculus scelerisque nisi in urna <br/> nulla. Sit tempor a et nisl, ac felis.</p>
+              <br>
               <button type="button" class="btn btn-outline-light">buy avada today</button>
 
           </div>
@@ -73,26 +74,45 @@ export default {
 </script>
 
 <style lang="scss">
+.nav-item a{
+    color: gray !important;
+}
+.fusion{
+    
+   font-weight: 700;
+   font-size: 60px;
+    
+}
 .sezione1{
     position: relative;
+    
 }
 .absolute{
     position: absolute;
     width: 100%;
     left: 0px;
     
+    
 }
 .back{
     width:100%; 
     min-width:600px; 
     margin:auto;
+    
+
 }
 .destra{
     padding: 0px;
+    
 }
 .sinistra{
     text-align: center;
+    background-color: #030303;
     
+}
+.logo{
+    margin-top: 50px;
+    margin-right: 300px;
 }
 
    

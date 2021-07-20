@@ -28,4 +28,5 @@ export default {
 
 @import "@/style/general.scss";
 
+
 </style>
