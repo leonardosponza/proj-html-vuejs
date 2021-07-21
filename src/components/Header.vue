@@ -48,11 +48,11 @@
             </header>
 <div class="row">
     <div class="sinistra col-6 text-white">
+                <div class="linea"></div>
               <p style="margin-top: 300px; margin-right:200px;">the best table in town</p>
-              <h1 class="fusion">FINE DINING</h1>
-              <h1 class="fusion">EXPERIENCE</h1>
+              <h1 class="fusion">FINE DINING<br>EXPERIENCE</h1>
               <br>
-              <p>Pellentesque vitae viverra risus, sagittis.<br/> Venenatis ridiculus scelerisque nisi in urna <br/> nulla. Sit tempor a et nisl, ac felis.</p>
+              <p class="font">Pellentesque vitae viverra risus, sagittis.<br/> Venenatis ridiculus scelerisque nisi in urna <br/> nulla. Sit tempor a et nisl, ac felis.</p>
               <br>
               <button type="button" class="btn btn-outline-light">buy avada today</button>
 
@@ -74,6 +74,10 @@ export default {
 </script>
 
 <style lang="scss">
+.linea{
+    border: 1px solid;
+    color: white;
+}
 .nav-item a{
     color: gray !important;
 }
@@ -81,6 +85,7 @@ export default {
     
    font-weight: 700;
    font-size: 60px;
+
     
 }
 .sezione1{
